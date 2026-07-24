@@ -6,7 +6,7 @@ const CONTACT = {
   email: "hello@prmotions.it",
   phone: "+39 333 876 1897",
   instagram: "@pr.motions.project",
-  instagramUrl: "https://instagram.com/prmotions",
+  instagramUrl: "https://www.instagram.com/pr.motions.project?igsh=MWxjY2R4OXZsMzF2aA%3D%3D&utm_source=qr",
 };
 
 export default function Contact() {
