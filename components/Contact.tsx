@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const CONTACT = {
-  email: "hello@prmotions.it",
+  email: "pr.motions.project@gmail.com",
   phone: "+39 333 876 1897",
   instagram: "@pr.motions.project",
   instagramUrl: "https://www.instagram.com/pr.motions.project?igsh=MWxjY2R4OXZsMzF2aA%3D%3D&utm_source=qr",
