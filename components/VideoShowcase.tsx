@@ -47,7 +47,7 @@ export default function VideoShowcase() {
             controls
             autoPlay
           >
-            <source src="/torrechiara.mp4" type="video/mp4" />
+           <source src="/IMG_5542.mp4" type="video/mp4" />
           </video>
         )}
       </motion.div>
