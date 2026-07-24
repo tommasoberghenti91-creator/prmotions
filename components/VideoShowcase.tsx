@@ -31,11 +31,8 @@ export default function VideoShowcase() {
         className="relative mx-auto max-w-6xl aspect-video bg-[#111] border border-white/10 group cursor-pointer overflow-hidden"
         onClick={() => setPlaying(true)}
       >
-        {/* ============================================================
-            VIDEO PLACEHOLDER — sostituire con il video reale del progetto.
-            Mettere il file in /public/torrechiara.mp4 e un fotogramma
-            poster in /public/torrechiara-poster.jpg
-           ============================================================ */}
+        {IMG_5542.mp4
+}
         {!playing ? (
           <>
             <div className="absolute inset-0 bg-gradient-to-br from-[#1c1a14] via-[#0c0b09] to-[#050505]" />
