@@ -16,7 +16,7 @@ export default function VideoShowcase() {
         className="text-center max-w-2xl mx-auto mb-14"
       >
         <span className="text-xs tracking-eyebrow uppercase text-gold">
-          Il nostro primo progetto
+          Il nostro ultimo progetto
         </span>
         <h2 className="font-display text-3xl md:text-5xl mt-4 text-white">
           Castello di Torrechiara
