@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: "La tua azienda, come merita di essere vista.",
     url: SITE_URL,
     siteName: "PR.MOTIONS",
-   images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+   images: [{ url: "/f3deb49e-4486-4136-aafa-6d333ec5540b.png", width: 1200, height: 630 }],
     locale: "it_IT",
     type: "website",
   },
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PR.MOTIONS — Contenuti video premium per aziende",
     description: "La tua azienda, come merita di essere vista.",
-    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "/f3deb49e-4486-4136-aafa-6d333ec5540b.png", width: 1200, height: 630 }],
   },
   robots: { index: true, follow: true },
 };
