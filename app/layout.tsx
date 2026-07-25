@@ -15,8 +15,14 @@ const body = Inter({
   display: "swap",
 });
 
+// Dominio del sito live. Oggi punta al deploy su Vercel.
+// Quando (e se) collegherete un dominio proprio (es. prmotions.it),
+// basta cambiare SITE_URL qui sotto: si aggiorna automaticamente
+// ovunque (canonical, Open Graph, Twitter Card, sitemap).
+const SITE_URL = "https://prmotions.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://prmotions.it"),
+  metadataBase: new URL(SITE_URL),
   title: "PR.MOTIONS — Contenuti video premium per aziende",
   description:
     "PR.MOTIONS realizza contenuti video cinematografici per aziende, hotel, strutture sportive e attività del territorio. La tua azienda, come merita di essere vista.",
@@ -27,14 +33,23 @@ export const metadata: Metadata = {
     "video drone",
     "PR.MOTIONS",
   ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     title: "PR.MOTIONS — Contenuti video premium per aziende",
     description: "La tua azienda, come merita di essere vista.",
-    url: "https://prmotions.it",
+    url: SITE_URL,
     siteName: "PR.MOTIONS",
     images: [{ url: "/logo.png", width: 1536, height: 1024 }],
     locale: "it_IT",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PR.MOTIONS — Contenuti video premium per aziende",
+    description: "La tua azienda, come merita di essere vista.",
+    images: [{ url: "/logo.png", width: 1536, height: 1024 }],
   },
   robots: { index: true, follow: true },
 };
