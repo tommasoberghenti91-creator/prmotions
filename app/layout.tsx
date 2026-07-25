@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo_Black, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const display = Archivo_Black({
@@ -61,7 +62,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it" className={`${display.variable} ${body.variable}`}>
-      <body className="font-body antialiased">{children}</body>
+    <body className="font-body antialiased">
+  {children}
+  <Analytics />
+</body>
     </html>
   );
 }
