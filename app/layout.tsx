@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Archivo_Black, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const display = Archivo_Black({
@@ -42,7 +44,11 @@ export const metadata: Metadata = {
     description: "La tua azienda, come merita di essere vista.",
     url: SITE_URL,
     siteName: "PR.MOTIONS",
-   images: [{ url: "/f3deb49e-4486-4136-aafa-6d333ec5540b.png", width: 1200, height: 630 }],
+    // Immagine dedicata alle anteprime social: sfondo nero pieno, non trasparente.
+    // Il logo trasparente (/logo.png) è pensato per il sito, dove lo sfondo è
+    // già scuro; nelle card social (spesso su sfondo bianco) la scritta "PR."
+    // bianca sparirebbe. /og-image.png risolve il problema.
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
     locale: "it_IT",
     type: "website",
   },
@@ -50,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "PR.MOTIONS — Contenuti video premium per aziende",
     description: "La tua azienda, come merita di essere vista.",
-    images: [{ url: "/f3deb49e-4486-4136-aafa-6d333ec5540b.png", width: 1200, height: 630 }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
   robots: { index: true, follow: true },
 };
@@ -62,10 +68,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it" className={`${display.variable} ${body.variable}`}>
-    <body className="font-body antialiased">
-  {children}
-  <Analytics />
-</body>
+      <body className="font-body antialiased">
+        {/* Header e Footer erano prima dentro app/page.tsx: spostati qui
+            perché ora servono su tutte le pagine (homepage + /lavori),
+            non solo sulla home. Nessuna modifica al loro codice interno. */}
+        <Header />
+        {children}
+        <Footer />
+        {/* Vercel Web Analytics: conteggio visite/pagine viste, privacy-friendly
+            (nessun cookie di tracciamento personale). Va anche attivato una
+            tantum dalla dashboard Vercel — vedi istruzioni. */}
+        <Analytics />
+      </body>
     </html>
   );
 }
