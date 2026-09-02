@@ -1,9 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isLavori = pathname?.startsWith("/lavori");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -17,31 +21,51 @@ export default function Header() {
         scrolled ? "bg-ink/80 backdrop-blur-md py-4" : "bg-transparent"
       }`}
     >
-      <a href="#top" className="font-display text-sm tracking-eyebrow text-white">
+      <Link href="/" className="font-display text-sm tracking-eyebrow text-white">
         PR<span className="text-gold">.</span>MOTIONS
-      </a>
+      </Link>
 
       <nav className="hidden md:flex items-center gap-10 text-xs tracking-eyebrow uppercase text-white/70">
-        <a href="#progetto" className="hover:text-gold transition-colors">
+        {/* Nuova voce di navigazione, stesso stile identico delle altre */}
+        <Link
+          href="/lavori"
+          className={`transition-colors ${isLavori ? "text-gold" : "hover:text-gold"}`}
+        >
+          Lavori
+        </Link>
+        {/* Voci esistenti, invariate: solo l'href è diventato "/#..." invece
+            di "#..." così funzionano anche cliccando da /lavori, non solo
+            dalla homepage */}
+        <Link href="/#progetto" className="hover:text-gold transition-colors">
           Progetto
-        </a>
-        <a href="#cosa-facciamo" className="hover:text-gold transition-colors">
+        </Link>
+        <Link href="/#cosa-facciamo" className="hover:text-gold transition-colors">
           Cosa facciamo
-        </a>
-        <a
-          href="#contatti"
+        </Link>
+        <Link
+          href="/#contatti"
           className="border border-gold text-gold px-5 py-2 hover:bg-gold hover:text-ink transition-colors"
         >
           Contattaci
-        </a>
+        </Link>
       </nav>
 
-      <a
-        href="#contatti"
-        className="md:hidden text-xs tracking-eyebrow uppercase text-gold border border-gold px-4 py-2"
-      >
-        Contatti
-      </a>
+      <div className="md:hidden flex items-center gap-4">
+        <Link
+          href="/lavori"
+          className={`text-xs tracking-eyebrow uppercase ${
+            isLavori ? "text-gold" : "text-white/70"
+          }`}
+        >
+          Lavori
+        </Link>
+        <Link
+          href="/#contatti"
+          className="text-xs tracking-eyebrow uppercase text-gold border border-gold px-4 py-2"
+        >
+          Contatti
+        </Link>
+      </div>
     </header>
   );
 }
