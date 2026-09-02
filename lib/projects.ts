@@ -43,8 +43,21 @@ export const projects: Project[] = [
     tone: ["#141c16", "#050805"],
     mediaReady: false,
   },
+  {
+     slug: "nome-del-progetto",
+     title: "Nome del Progetto",
+     location: "Città, Parma",
+     type: "Tipo di cliente (es. Hotel, Cantina, Location storica)",
+     summary: "Una frase breve, quella che si vede nella card della griglia.",
+     detail: "Un paragrafo un po' più lungo, quello che si vede nella pagina di dettaglio del progetto.",
+     video: "/nome-del-progetto.mp4",
+     poster: "/nome-del-progetto-poster.jpg",
+     gallery: [],
+     tone: ["#1c1a14", "#050505"],
+     mediaReady: true,
+   },
 ];
 
 // Numero di riquadri "nuovo progetto in arrivo" mostrati in coda alla griglia,
 // per progetti non ancora assegnati a un cliente/location reale.
-export const upcomingSlots = 2;
+export const upcomingSlots = 1;
