@@ -42,7 +42,7 @@ export const projects: Project[] = [
     video: "labirinto-della-masone.mp4",
     gallery: [],
     tone: ["#141c16", "#050805"],
-    mediaReady: false,
+    mediaReady: true,
   },
   {
      slug: "La-Fattoria-nei-Boschi",
@@ -55,7 +55,7 @@ export const projects: Project[] = [
      poster: "/nome-del-progetto-poster.jpg",
      gallery: [],
      tone: ["#1c1a14", "#050505"],
-     mediaReady: true,
+     mediaReady: false,
    },
 ];
 
