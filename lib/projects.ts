@@ -24,7 +24,7 @@ export const projects: Project[] = [
       "Un borgo dell'XI secolo raccontato solo al al tramonto.",
     detail:
       "Il Castello di Torrechiara, uno dei manieri meglio conservati dell'Emilia, è stato il primo progetto di PR.MOTIONS. Abbiamo scelto di girare esclusivamente al tramonto, lasciando che la luce naturale raccontasse la storia delle sue pietre.",
-    video: "/torrechiara.mp4",
+    video: "/IMG_5542.mp4",
     poster: "/torrechiara-poster.jpg",
     gallery: [],
     tone: ["#1c1a14", "#050505"],
