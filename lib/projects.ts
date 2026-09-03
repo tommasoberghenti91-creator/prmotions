@@ -39,6 +39,7 @@ export const projects: Project[] = [
       "Il più grande labirinto di bambù al mondo, tra architettura e natura.",
     detail:
       "Un progetto dedicato a uno dei luoghi più scenografici della provincia di Parma, ideato da Franco Maria Ricci.",
+    video: "nome-del-progetto.mp4",
     gallery: [],
     tone: ["#141c16", "#050805"],
     mediaReady: false,
