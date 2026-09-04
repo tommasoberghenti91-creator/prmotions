@@ -52,7 +52,7 @@ export const projects: Project[] = [
      type: "Azienda Agricola",
      summary: "Una fattoria immersa nella natura",
      detail: "La fattoria nei Boschi è una realtà distante dal rumore della città, situata nel parco regionale dei Boschi di Carrega.",
-     video: "/nome-del-progetto.mp4",
+     video: "/fattoria.mp4",
      poster: "/fattoria.jpg",
      gallery: [],
      tone: ["#1c1a14", "#050505"],
