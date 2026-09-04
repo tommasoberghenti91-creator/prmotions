@@ -56,7 +56,7 @@ export const projects: Project[] = [
      poster: "/fattoria.jpg",
      gallery: [],
      tone: ["#1c1a14", "#050505"],
-     mediaReady: false,
+     mediaReady: true,
    },
   {
      slug: "A-Place-to-Call-Home",
@@ -69,7 +69,7 @@ export const projects: Project[] = [
      poster: "/tecnocasa.jpg",
      gallery: [],
      tone: ["#1c1a14", "#050505"],
-     mediaReady: false,
+     mediaReady: true,
    },
 ];
 
