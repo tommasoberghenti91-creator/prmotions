@@ -34,7 +34,7 @@ export default function VideoShowcase() {
         {!playing ? (
           <>
             <div className="absolute inset-0 bg-gradient-to-br from-[#1c1a14] via-[#0c0b09] to-[#050505]" />
-            <div className="absolute inset-0 bg-[url('/torrechiara-poster.jpg')] bg-cover bg-center opacity-70" />
+            <div className="absolute inset-0 bg-[url('/labirinto.jpg')] bg-cover bg-center opacity-70" />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="h-20 w-20 rounded-full border border-gold flex items-center justify-center group-hover:bg-gold transition-colors duration-300">
                 <span className="ml-1 h-0 w-0 border-y-[10px] border-y-transparent border-l-[16px] border-l-gold group-hover:border-l-ink transition-colors duration-300" />
