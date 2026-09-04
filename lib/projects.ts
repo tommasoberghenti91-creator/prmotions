@@ -65,7 +65,7 @@ export const projects: Project[] = [
      type: "Immobile",
      summary: "Valorizzare un immobile attraverso le immagini",
      detail: "Un racconto visivo pensato per valorizzare una proprietà attraverso gli spazi, l’architettura e il contesto che la circonda, dando vita a una presentazione autentica e coinvolgente.",
-     video: "/nome-del-progetto.mp4",
+     video: "/tecnocasa.mp4",
      poster: "/tecnocasa.jpg",
      gallery: [],
      tone: ["#1c1a14", "#050505"],
