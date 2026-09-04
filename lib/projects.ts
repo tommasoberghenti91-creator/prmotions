@@ -57,8 +57,21 @@ export const projects: Project[] = [
      tone: ["#1c1a14", "#050505"],
      mediaReady: false,
    },
+  {
+     slug: "A-Place-to-Call-Home",
+     title: "A Place to Call Home",
+     location: "Collecchio, Parma",
+     type: "Immobile",
+     summary: "Valorizzare un immobile attraverso le immagini",
+     detail: "Un racconto visivo pensato per valorizzare una proprietà attraverso gli spazi, l’architettura e il contesto che la circonda, dando vita a una presentazione autentica e coinvolgente.",
+     video: "/nome-del-progetto.mp4",
+     poster: "/nome-del-progetto-poster.jpg",
+     gallery: [],
+     tone: ["#1c1a14", "#050505"],
+     mediaReady: false,
+   },
 ];
 
 // Numero di riquadri "nuovo progetto in arrivo" mostrati in coda alla griglia,
 // per progetti non ancora assegnati a un cliente/location reale.
-export const upcomingSlots = 1;
+export const upcomingSlots = 0;
