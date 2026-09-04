@@ -36,8 +36,8 @@ export default function Header() {
         {/* Voci esistenti, invariate: solo l'href è diventato "/#..." invece
             di "#..." così funzionano anche cliccando da /lavori, non solo
             dalla homepage */}
-        <Link href="/#progetto" className="hover:text-gold transition-colors">
-          Progetto
+        <Link href="/#ultimo-progetto" className="hover:text-gold transition-colors">
+          Ultimo progetto
         </Link>
         <Link href="/#cosa-facciamo" className="hover:text-gold transition-colors">
           Cosa facciamo
