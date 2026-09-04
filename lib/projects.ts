@@ -25,7 +25,7 @@ export const projects: Project[] = [
     detail:
       "Il Castello di Torrechiara, uno dei manieri meglio conservati dell'Emilia, è stato il primo progetto di PR.MOTIONS. Abbiamo scelto di girare esclusivamente al tramonto, lasciando che la luce naturale raccontasse la storia delle sue pietre.",
     video: "/IMG_5542.mp4",
-    poster: "/torrechiara-poster.jpg",
+    poster: "/castello.jpg",
     gallery: [],
     tone: ["#1c1a14", "#050505"],
     mediaReady: true,
@@ -40,6 +40,7 @@ export const projects: Project[] = [
     detail:
       "Un progetto dedicato a uno dei luoghi più scenografici della provincia di Parma, ideato da Franco Maria Ricci.",
     video: "/labirinto.mp4",
+    poster: "/labirinto.jpg",
     gallery: [],
     tone: ["#141c16", "#050805"],
     mediaReady: true,
