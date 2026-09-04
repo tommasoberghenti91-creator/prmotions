@@ -47,7 +47,7 @@ export default function VideoShowcase() {
             controls
             autoPlay
           >
-           <source src="/labirinto-della-masone.mp4" type="video/mp4" />
+           <source src="/labirinto.mp4" type="video/mp4" />
           </video>
         )}
       </motion.div>
