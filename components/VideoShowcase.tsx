@@ -19,7 +19,7 @@ export default function VideoShowcase() {
           Il nostro ultimo progetto
         </span>
         <h2 className="font-display text-3xl md:text-5xl mt-4 text-white">
-          Castello di Torrechiara
+          Labirinto della Masone
         </h2>
       </motion.div>
 
@@ -47,7 +47,7 @@ export default function VideoShowcase() {
             controls
             autoPlay
           >
-           <source src="/IMG_5542.mp4" type="video/mp4" />
+           <source src="/labirinto-della-masone.mp4" type="video/mp4" />
           </video>
         )}
       </motion.div>
